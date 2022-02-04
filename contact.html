@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Contact Dags för Franska, fransk podcast, french podcast, learn french, lära sig franska">
+    <link rel="stylesheet" href="dags.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+    <title>Dags för franska - Kontakta oss</title>
+</head>
+
+
+<!-- navbar that gets fixed and white when scrolling thanks to jquery-->
+<header>
+    <nav id="menu" class="navbar-fixed-top">
+        <ul>
+            <li><a href="index.html">Dags för franska</a></li>
+            <li><a href="lyssnapaoss.html">Lyssna på oss</a></li>
+            <li><a href="material.html">Material</a>
+            </li>
+            <li><a href="contact.html">Kontakta oss</a></li>
+            <li id="about"><a href="about.html">Om oss</a></li>
+
+        </ul>
+    </nav>
+</header>
+<!-- word animation for the podcast name-->
+
+<body>
+    <div class="word">
+        <span>d</span>
+        <span>a</span>
+        <span>g</span>
+        <span>s</span>
+        <span>&nbsp;</span>
+        <span>f</span>
+        <span>ö</span>
+        <span>r</span>
+        <span>&nbsp;</span>
+        <span>f</span>
+        <span>r</span>
+        <span>a</span>
+        <span>n</span>
+        <span>s</span>
+        <span>k</span>
+        <span>a</span>
+    </div>
+    <!-- podcast name for when the page is too small-->
+
+    <div class="word_off">dags för franska</div>
+
+    <!-- intro text before the contact form-->
+
+    <div class="center">
+        <h1>Skulle du vilja kontakta oss?</h1>
+        <p>Kul, vi ser fram emot att läsa dig! <br> Fyll i formulären nedan så kontaktar vi dig inom kort.</p>
+        <form action="https://formsubmit.co/dagsforfranska@gmail.com" method="POST">
+
+            <!-- Text field -->
+            <label for="fullName">Vad heter du?</label>
+            <input type="text" name="fullName" id="fullName" placeholder="Ditt förnamn och efternamn" size="30"
+                required><br>
+            <!-- Mail field -->
+
+            <label for="mail">Vad har du för mejladress?</label>
+            <input type="email" name="mail" id="mail" placeholder="Din mejladress" size="20" required><br>
+            <!-- Select level field -->
+
+            <label for="level">Vad är din nivå på franska?</label>
+            <select name="levels" id="levels">
+
+                <option value="beginner">Nybörjare</option>
+                <option value="intermediate">Mellannivå</option>
+                <option value="fluent">Flytande</option>
+                <option value="nolevel">Jag studerar inte franska.</option>
+
+
+            </select><br><br>
+            <!-- Text area -->
+
+            <label for="message">Skriv ditt meddelande här:</label><br><br>
+            <textarea type="text" name="message" placeholder="Ditt meddelande" rows="10" cols="40" required></textarea>
+            <br>
+            <br>
+            <!-- Submit button to send a mail to dagsforfranska@gmail.com with Formsubmit -->
+            <input type="submit" value="Skicka">
+        </form>
+    </div>
+
+    <footer>
+
+        Dags för franska - 2021 - dagsforfranska@gmail.com
+
+
+    </footer>
+
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
