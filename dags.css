@@ -50,7 +50,7 @@ table {
 
 body {
   background-size: cover;
-  background-color: #f7f7ff;
+  background-color: #FECB98;
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -118,7 +118,7 @@ h2 {
 /* Navbar and home page menu */
 
 nav {
-  border-bottom: 3px solid #a8dadc;
+  border-bottom: 3px solid #004e98;
   padding: 0;
   margin:0 ;
   top:0;
@@ -166,7 +166,7 @@ figure {
   margin: 0;
   padding: 0;
   flex: 0;
-  background-color:white;
+  background-color:#FECB98;
 }
 
 .hover-menu {
@@ -198,7 +198,7 @@ figure {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-right: 3px solid #a8dadc;
+  border-right: 3px solid #004e98;
 }
   
 .hover-menu div a {
@@ -218,7 +218,6 @@ figure {
 }
   
 .hover-menu:hover img {
-  opacity: 0.5;
   right: -120px;
 }
   
@@ -228,7 +227,7 @@ figure {
 }
 
 #index {
-  background-color: white;
+  background-color: #FECB98;
 }
 
 /* Classes to place content on pages */
@@ -265,19 +264,19 @@ figure {
 /* Text selection colours */
 
 p::selection {
-  background-color: #a8dadc;
+  background-color: #004e98;
 }
 
 h1::selection {
-  background-color: #a8dadc;
+  background-color: #004e98;
 }
 
 h2::selection {
-  background-color: #a8dadc;
+  background-color: #004e98;
 }
 
 label::selection {
-  background-color: #a8dadc;
+  background-color: #004e98;
 }
 
 /* Images and effects on images */
@@ -315,7 +314,7 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover {
-  border-color:#a8dadc;
+  border-color:#004e98;
   color: black;
   box-shadow: 0 0.5em 0.5em -0.4em lightblue;
   transform: translateY(-0.25em);
@@ -329,7 +328,7 @@ input[type="submit"]:hover {
 
 .identity:hover{
   background-image: linear-gradient(
--60deg,#fff 0,#a8dadc 100%);
+-60deg,#fff 0,#004e98 100%);
   border-radius: 15px;
   transition-timing-function: ease-in;
   box-sizing: border-box;
@@ -461,7 +460,7 @@ iframe {
 .word {
 	font-family: 'Futura', sans-serif;
 	perspective: 1000px;
-	color: #a8dadc;
+	color: #D40012;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -678,8 +677,8 @@ footer {
   position: relative;
   display: grid;
   text-align: center;
-  background-color: #a8dadc;
-  color: black;
+  background-color: #004e98;
+  color: white;
   height: 40px;
   bottom:0;
   align-items: center;
@@ -756,7 +755,7 @@ footer {
 .word_off {
   display: block;
   font-family: 'Futura', sans-serif;
-	color: #a8dadc;
+	color: #004e98;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -769,3 +768,38 @@ footer {
 }
 }
  
+/* Priser */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.price-category {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.price-category img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.price-category h2 {
+  color: #333;
+}
+
+.price-category p {
+  color: #777;
+}

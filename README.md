@@ -1,2 +1,2 @@
-<h1>Dags för franska</h1>
-This is my podcast website where all vocabulary lists, texts and info about the podcast is available.
+<h1>En fransk rendez-vous</h1>
+This is a page for French courses through theater.
