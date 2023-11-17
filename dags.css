@@ -264,19 +264,19 @@ figure {
 /* Text selection colours */
 
 p::selection {
-  background-color: #004e98;
+  background-color: #bdd5ea;
 }
 
 h1::selection {
-  background-color: #004e98;
+  background-color: #bdd5ea;
 }
 
 h2::selection {
-  background-color: #004e98;
+  background-color:#bdd5ea;
 }
 
 label::selection {
-  background-color: #004e98;
+  background-color:#bdd5ea;
 }
 
 /* Images and effects on images */
@@ -327,8 +327,7 @@ input[type="submit"]:hover {
 }
 
 .identity:hover{
-  background-image: linear-gradient(
--60deg,#fff 0,#004e98 100%);
+  background-color: white;
   border-radius: 15px;
   transition-timing-function: ease-in;
   box-sizing: border-box;
