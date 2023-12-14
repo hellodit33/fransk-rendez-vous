@@ -50,7 +50,7 @@ table {
 
 body {
   background-size: cover;
-  background-color: #FECB98;
+  background-color: white;
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -166,7 +166,7 @@ figure {
   margin: 0;
   padding: 0;
   flex: 0;
-  background-color:#FECB98;
+  background-color:white;
 }
 
 .hover-menu {
@@ -213,7 +213,7 @@ figure {
   border-top: solid 1px black;
 }
  
-#abouthome {
+#kursenhome {
   border-bottom: solid 1px black;
 }
   
@@ -320,7 +320,7 @@ input[type="submit"]:hover {
   transform: translateY(-0.25em);
 }
 
-/* About page */
+/* kursen page */
 
 .identity {
   padding: 20px;

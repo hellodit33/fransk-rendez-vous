@@ -1,2 +1,2 @@
-<h1>En fransk rendez-vous</h1>
+<h1>Våga på franska</h1>
 This is a page for French courses through theater.
