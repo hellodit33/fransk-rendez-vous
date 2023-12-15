@@ -6,10 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords"
-    content="learn french, learn french through theater, teater, french theater, french courses, franska kurs, teaterkurs, lära sig franska">
+        content="learn french, learn french through theater, teater, french theater, french courses, franska kurs, teaterkurs, lära sig franska">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="vaga.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
@@ -33,70 +37,145 @@
 <body>
 
 
-    <!-- word animation for the podcast name-->
-
-    <div class="word">
-        <span>v</span>
-        <span>å</span>
-        <span>g</span>
-        <span>a</span>
-        <span>&nbsp;</span>
-        <span>p</span>
-        <span>å</span>
-        <span>&nbsp;</span>
-        <span>f</span>
-        <span>r</span>
-        <span>a</span>
-        <span>n</span>
-        <span>s</span>
-        <span>k</span>
-        <span>a</span>
-
-    </div>
-    <div class="word_off">våga på franska</div>
-
-    <!-- classes to place the content in a grid and center it-->
+    <main>
 
 
-    <div class="wrapper center">
-        <h1>Praktisk info</h1>
+        <!-- classes to place the content in a grid and center it-->
 
-        <div class="grid-container">
-            <div class="price-category">
-                <img src="image1.jpg" alt="Category 1">
-                <h2>Category 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <div class="wrapper center">
+            <h1>Praktisk info</h1>
+
+            <div class="grid-container">
+                <div class="price-category">
+                    <img src="logotry.png" alt="logo">
+                    <h2>Första kursomgången: 8 tillfällen</h2>
+                    <p>Varje måndag från den 5e februari till den 25e mars 2024, på måndagar eftermiddagar kl 14-16.30
+                        på Södermalm.
+                        Pakettpris: 2000kr.
+                    </p>
+                </div>
+                <div id="calendar"></div>
+
+
             </div>
-        
-            <div class="price-category">
-                <img src="image2.jpg" alt="Category 2">
-                <h2>Category 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
+            <a href="contact.html" class="contactbutton">Kontakta oss</a>
+
+
+
         </div>
-        
-
- 
- </div>
- 
-    <footer>
-        Våga på franska - 2023 - vagapafranska@gmail.com
-
-
-    </footer>
-    </div>
 
 
 
-
-    <script src="app.js"></script>
-
-
-
-
-
-
-
+    </main>
 </body>
+<footer>
+    <container>
+        <section>
+            <h3>Våga på franska </h3><br>
+            +46706691762 <br>
+            <br>
+            vagapafranska@gmail.com
+            </div>
+        </section>
+        <section>
+            <h3>Våra partner</h3>
+            <div class="partner">
+                <a target="_blank" href="https://open.spotify.com/show/3iGaLceb86KxqjNwVUKhUi">
+                    <div class="partnerskap"> <img src="dagsforfranskalogo.png" /> Dags för franska
+                    </div>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/lacompagnieviceversa">
+                    <div class="partnerskap"> <img src="logoviceversa.png" />La Compagnie Vice-Versa</div>
+                </a>
+            </div>
+        </section>
+
+    </container>
+    <container>
+        <div>
+            © 2023 Våga på franska
+        </div>
+    </container>
+</footer>
+
+
+
+
+
+<script src="app.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#calendar').fullCalendar({
+            header: {
+                left: 'prev',
+                center: 'title',
+                right: 'next'
+            },
+            defaultView: 'month',
+            validRange: {
+                start: '2024-02-01',
+                end: '2024-03-31'
+            },
+            events: [
+                {
+                    title: 'Tillfälle 1',
+                    start: '2024-02-05',
+                    end: '2024-02-05',
+                    color: 'lightblue'
+                },
+                {
+                    title: 'Tillfälle 2',
+                    start: '2024-02-12',
+                    end: '2024-02-12',
+                    color: 'lightblue'
+                },
+                {
+                    title: 'Tillfälle 3',
+                    start: '2024-02-19',
+                    end: '2024-02-19',
+                    color: 'lightblue'
+                },
+                {
+                    title: 'Tillfälle 4',
+                    start: '2024-02-26',
+                    end: '2024-02-26',
+                    color: 'lightblue'
+                },
+                {
+                    title: 'Tillfälle 5',
+                    start: '2024-03-04',
+                    end: '2024-03-04',
+                    color: 'lightblue'
+                },
+                {
+                    title: 'Tillfälle 6',
+                    start: '2024-03-11',
+                    end: '2024-03-11',
+                    color: 'lightblue'
+                },
+                {
+                    title: 'Tillfälle 7',
+                    start: '2024-03-18',
+                    end: '2024-03-18',
+                    color: 'lightblue'
+                },
+                {
+                    title: 'Tillfälle 8',
+                    start: '2024-03-25',
+                    end: '2024-03-25',
+                    color: 'lightblue'
+                }
+            ]
+        });
+    });
+</script>
+
+
+
+
+
+
 
 </html>

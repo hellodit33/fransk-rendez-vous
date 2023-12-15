@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords"
-    content="learn french, learn french through theater, teater, french theater, french courses, franska kurs, teaterkurs, lära sig franska">
+        content="learn french, learn french through theater, teater, french theater, french courses, franska kurs, teaterkurs, lära sig franska">
     <link rel="stylesheet" href="vaga.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,74 +33,101 @@
 <!-- word animation for the podcast name-->
 
 <body>
-    <div class="word">
-        <span>v</span>
-        <span>å</span>
-        <span>g</span>
-        <span>a</span>
-        <span>&nbsp;</span>
-        <span>p</span>
-        <span>å</span>
-        <span>&nbsp;</span>
-        <span>f</span>
-        <span>r</span>
-        <span>a</span>
-        <span>n</span>
-        <span>s</span>
-        <span>k</span>
-        <span>a</span>
+    <main>
+        <div class="word">
+            <span>v</span>
+            <span>å</span>
+            <span>g</span>
+            <span>a</span>
+            <span>&nbsp;</span>
+            <span>p</span>
+            <span>å</span>
+            <span>&nbsp;</span>
+            <span>f</span>
+            <span>r</span>
+            <span>a</span>
+            <span>n</span>
+            <span>s</span>
+            <span>k</span>
+            <span>a</span>
 
-    </div>
-    <div class="word_off">våga på franska</div>
-    <!-- intro text before the contact form-->
+        </div>
+        <div class="word_off">våga på franska</div>
+        <!-- intro text before the contact form-->
 
-    <div class="center">
-        <h1>Skulle du vilja kontakta oss?</h1>
-        <p>Kul, vi ser fram emot att läsa dig! <br> Fyll i formulären nedan så kontaktar vi dig inom kort.</p>
-        <form action="https://formsubmit.co/dagsforfranska@gmail.com" method="POST">
+        <div class="center">
+            <h1>Skulle du vilja kontakta oss?</h1>
+            <p>Kul, vi ser fram emot att läsa dig! <br> Fyll i formulären nedan så kontaktar vi dig inom kort.</p>
+            <form action="https://formsubmit.co/dagsforfranska@gmail.com" method="POST">
 
-            <!-- Text field -->
-            <label for="fullName">Vad heter du?</label>
-            <input type="text" name="fullName" id="fullName" placeholder="Ditt förnamn och efternamn" size="30"
-                required><br>
-            <!-- Mail field -->
+                <!-- Text field -->
+                <label for="fullName">Vad heter du?</label>
+                <input type="text" name="fullName" id="fullName" placeholder="Ditt förnamn och efternamn" size="30"
+                    required><br>
+                <!-- Mail field -->
 
-            <label for="mail">Vad har du för mejladress?</label>
-            <input type="email" name="mail" id="mail" placeholder="Din mejladress" size="20" required><br>
-            <!-- Select level field -->
+                <label for="mail">Vad har du för mejladress?</label>
+                <input type="email" name="mail" id="mail" placeholder="Din mejladress" size="20" required><br>
+                <!-- Select level field -->
 
-            <label for="level">Vad är din nivå på franska?</label>
-            <select name="levels" id="levels">
+                <label for="level">Vad är din nivå på franska?</label>
+                <select name="levels" id="levels">
 
-                <option value="beginner">Nybörjare</option>
-                <option value="intermediate">Mellannivå</option>
-                <option value="fluent">Flytande</option>
-                <option value="nolevel">Jag studerar inte franska.</option>
-
-
-            </select><br><br>
-            <!-- Text area -->
-
-            <label for="message">Skriv ditt meddelande här:</label><br><br>
-            <textarea type="text" name="message" placeholder="Ditt meddelande" rows="10" cols="40" required></textarea>
-            <br>
-            <br>
-            <input type="submit" value="Skicka">
-        </form>
-    </div>
-
-    <footer>
-
-        Våga på franska - 2023 - vagapafranska@gmail.com
+                    <option value="beginner">Nybörjare</option>
+                    <option value="intermediate">Mellannivå</option>
+                    <option value="fluent">Flytande</option>
+                    <option value="nolevel">Jag studerar inte franska.</option>
 
 
-    </footer>
+                </select><br><br>
+                <!-- Text area -->
 
-
-
-
-    <script src="app.js"></script>
+                <label for="message">Skriv ditt meddelande här:</label><br><br>
+                <textarea type="text" name="message" placeholder="Ditt meddelande" rows="10" cols="40"
+                    required></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Skicka">
+            </form>
+        </div>
+    </main>
 
 </body>
+
+<footer>
+    <container>
+        <section>
+            <h3>Våga på franska </h3><br>
+            +46706691762 <br>
+            <br>
+            vagapafranska@gmail.com
+            </div>
+        </section>
+        <section>
+            <h3>Våra partner</h3>
+            <div class="partner">
+                <a target="_blank" href="https://open.spotify.com/show/3iGaLceb86KxqjNwVUKhUi">
+                    <div class="partnerskap"> <img src="dagsforfranskalogo.png" /> Dags för franska
+                    </div>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/lacompagnieviceversa">
+                    <div class="partnerskap"> <img src="logoviceversa.png" />La Compagnie Vice-Versa</div>
+                </a>
+            </div>
+        </section>
+
+    </container>
+    <container>
+        <div>
+            © 2023 Våga på franska
+        </div>
+    </container>
+</footer>
+
+
+
+
+<script src="app.js"></script>
+
 
 </html>
