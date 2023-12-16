@@ -157,7 +157,8 @@ h3 {
 
 p {
   font-family: "Noto Sans", serif;
-  margin: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
   line-height: 20px;
 }
 
@@ -342,17 +343,19 @@ figure {
 }
 
 .top {
-  padding: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
   display: grid;
   grid-template-columns: 400px 1fr;
   grid-template-rows: 1fr;
-  grid-gap: 20px;
+  grid-gap: 10px;
   margin: 0;
 }
 
 .items {
   display: grid;
   grid-template-columns: 1fr;
+  margin-bottom: 30px;
 }
 
 /* Text selection colours */
@@ -379,10 +382,16 @@ img {
   max-width: 100%;
 }
 
+.people {
+  display:flex;
+}
+
 .photo {
   width: 100%;
   grid-row: span 3;
   border-radius: 15px;
+  align-self: center;
+  justify-self: center;
 }
 
 /* Contact page */
@@ -799,7 +808,6 @@ footer {
   justify-content: center;
   flex-shrink: 0;
   bottom: 0;
-  width: 100%;
   row-gap: 40px;
   overflow-y: hidden;
 }
@@ -930,6 +938,11 @@ footer img {
   .grid-container {
     display: flex;
     flex-direction: column;
+  }
+
+  footer container{
+    grid-template-columns: 1fr;
+    row-gap: 30px;
   }
 }
 

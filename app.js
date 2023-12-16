@@ -5,6 +5,8 @@ $(document).ready(function () {
         if (scroll > 54) {
             $("nav").css("background", "white");
             $("nav").css("position", "fixed");
+            $("nav").css("z-index", "2");
+
         }
 
         else {
